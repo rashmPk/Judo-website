@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUDO products.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="search">
+    <div class="searchbar">
+        <input type="text" placeholder="search products" id="search-input">
+        <ul id="searchresults"></ul>
+    </div>
+
+          <!-- open  button  -->
+
+
+        <span class="product-menu-btn" onclick="openProductMenu()">☰ Menu</span> 
+
+        
+        <!-- Overlay (clicking on this closes the menu) -->
+        <div id="menuOverlay" class="menu-overlay" onclick="closeProductMenu()"></div>
+
+        <!---side menu -->
+
+        <div id="productsideMenu" class="product-side-menu">
+            <a href="javascript:void(0)" class="product-close-btn" onclick="closeProductMenu()">x </a>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>  
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+
+
+
+
+
+        <div class="container1">
+            <div class="textbox">Our Matches.</div>
+            <div class="image-scroll">
+                <img src="img/ChatGPT Image Jul 15, 2025, 06_00_29 AM.png" alt="">
+                <img src="img/ChatGPT Image Jul 15, 2025, 05_38_42 AM.png" alt="">
+                <img src="img/ChatGPT Image Jul 15, 2025, 06_06_09 AM.png" alt="">
+                <img src="" alt="coming soon..">
+                <img src="" alt="coming soon..">
+                <img src="" alt="coming soon..">
+                <img src="" alt="coming soon..">
+            </div>
+        </div>
+        <div class="container2">
+            <div class="textbox">Our lighters.</div>
+            <div class="image-scroll">
+                <img src="img/zippo lighter 3.png" alt="">
+                <img src="img/zippo lighter 1.png" alt="">
+                <img src="img/zippo lighter 2.png" alt="">
+                <img src="img/zippo lighter 4.png" alt="">
+                <img src="img/zippo lighter 5.png" alt="">
+                <img src="img/zippo lighter 6.png" alt="">
+                <img src="img/zippo lighter 7.png" alt="">
+            </div>
+        </div>
+    <footer>
+       &copy; rr match industries.
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

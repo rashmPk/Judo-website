@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+/*  HOME PAGE */
+
+
+.index{
+
+    font-family: arial,sans-serif;
+    line-height: 1.3;
+    background-color: #f4f4f4;
+}
+
+.indexhero{
+    background-color: #333;
+    color: white;
+    padding: 12rem 5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.indexhero h1{
+
+    font-size: 5rem;
+    
+}
+
+.heroheading{
+
+   position: absolute;
+   top: 5%;
+   left: 10%;
+   text-align: left;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+
+}
+
+nav a :hover{
+    text-decoration: underline;
+
+}
+
+
+
+
+.container1,
+.container2 {
+  padding-top: 2.5rem;  
+  position: relative;
+  margin: 2rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  min-height: 300px; /* or whatever height you want */
+  overflow: hidden;
+}
+
+
+.textbox {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.image-scroll{
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    padding:1rem 2rem;
+}
+
+
+/* TO make the scrollbar invisible */
+.image-scroll::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.image-scroll img{
+    width: 40vw;
+    max-width: 220px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+
+}
+
+/* On hover, image zooms slightly */
+.image-scroll img:hover{
+    transform: scale(1.05);}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 8rem 2rem 2rem 2rem; /* top padding only for space under the text */
+}
+
+
+footer{
+
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+
+}
+
+
+
+
+@media (min-width: 600px)
+{
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    header h1  {
+        margin-bottom: 0;
+    }
+
+    nav{
+        justify-content: flex-end;
+    }
+} 
+
+
+
+/* The Product Page */
+
+
+
+
+.search{
+    margin: 2rem 2rem;
+}
+
+.searchbar{
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    margin: 4rem;
+}
+
+.searchbar input[type="text"]{
+    width: 60%;
+    max-width: 600px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #b8b6b6;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.searchbar input[type="text"]:focus{
+    border-color: #333;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* About Us Page */
+ 
+
+
+
+.aboutus{
+    
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.section1,.section2,.section3{
+
+   
+    background-color: #a8a4a4;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    min-height: 400px;
+}
+
+
+.aboutus h1{
+    padding-left: 2rem ;
+    padding-top: 2rem;
+    font-size: 50px;
+    
+}
+
+.section1{
+    width: 100%;
+    height: 300px;
+    background-image: url('img/section 1.jpg'); 
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutus h2{
+    padding-left: 2rem;
+    font-size: 30px;
+
+}
+.aboutus p{
+    padding: 2rem;
+    font-size: 20px;    
+
+}
+
+.section2{
+
+     width: 100%;
+    height: 300px;
+    background-image:url('img/section 2.jpg') ; 
+
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section3{
+
+        width: 100%;
+    height: 300px;
+    background-image: url('img/section3.jpg') ; 
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* contact Page */
+
+.contactpage{
+
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.contactpage h1 {
+
+    padding-bottom: 2rem;
+
+}
+
+.contactpage p{
+    padding-bottom: 2rem;
+}
+
+.contactpage h3{
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* Home sidebar container */
+
+
+
+.menu-btn {
+  
+  
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  position: absolute; /* Keep it on top of the page */
+  top: 20px;          /* Distance from the top */
+  right: 20px;       /* Distance from the right */
+  
+  padding: 10px 15px;
+  border-radius: 5px;
+
+}
+
+
+
+.side-menu{
+    height: 100%;
+    width:0;
+    position: fixed;
+    top: 0;
+    right:0;
+    background-color: #5e5c5c;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+
+}
+
+/* Sidebar Links */
+.side-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.side-menu a:hover {
+  background-color: #878181;
+}
+
+/* Close Button */
+.side-menu .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color: #181717;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Product  sidebar container */
+
+
+
+.product-menu-btn {
+ font-size: 20px;
+  cursor: pointer;
+  color: #1f1e1e;
+  position: absolute; /* Keep it on top of the page */
+  top: 20px;       /* Distance from the top */
+  right: 20px;     /* Distance from the right */
+  
+  padding: 10px 15px;
+  border-radius: 5px;
+
+}
+
+
+
+.product-side-menu{
+    height: 100%;
+    width:0;
+    position: fixed;
+    top: 0;
+    right:0;
+    background-color: #5e5c5c;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+
+}
+
+/* Sidebar Links */
+.product-side-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.product-side-menu a:hover {
+  background-color: #878181;
+}
+
+/* Close Button */
+.product-side-menu .product-close-btn {
+  position: absolute ;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color: #0d0d0d;
+  cursor: pointer;
+}
+
+
+
+/*  About sidebar container */
+
+
+
+.about-menu-btn {
+ font-size: 20px;
+  cursor: pointer;
+  color: #ece7e7;
+  position: absolute; /* Keep it on top of the page */
+  top: 20px;       /* Distance from the top */
+  right: 20px;     /* Distance from the right */
+  
+  padding: 10px 15px;
+  border-radius: 5px;
+
+}
+
+
+
+.about-side-menu{
+    height: 100%;
+    width:0;
+    position: fixed;
+    top: 0;
+    right:0;
+    background-color: #5e5c5c;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+
+}
+
+/* Sidebar Links */
+.about-side-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.about-side-menu a:hover {
+  background-color: #878181;
+}
+
+/* Close Button */
+.about-side-menu .about-close-btn {
+  position: absolute ;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color: #181717;
+  cursor: pointer;
+}
+
+
+
+/* Contact sidebar container */
+
+
+
+.contact-menu-btn {
+ font-size: 20px;
+  cursor: pointer;
+  color: #1c1b1b;
+  position: absolute; /* Keep it on top of the page */
+  top: 20px;       /* Distance from the top */
+  right: 20px;     /* Distance from the right */
+  
+  padding: 10px 15px;
+  border-radius: 5px;
+
+}
+
+
+
+.contact-side-menu{
+    height: 100%;
+    width:0;
+    position: fixed;
+    top: 0;
+    right:0;
+    background-color: #5e5c5c;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+
+}
+
+/* Sidebar Links */
+.contact-side-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.contact-side-menu a:hover {
+  background-color: #878181;
+}
+
+/* Close Button */
+.contact-side-menu .contact-close-btn {
+  position: absolute ;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color: #181717;
+  cursor: pointer;
+}
+
+
+
+/* Overlay */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
